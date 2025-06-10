@@ -3,55 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>Fred Song</title>
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/fredsongyu/fredsongyu.github.io/main/assets/images/icon.png"/>
-  <style>
-    body {
-      background-color: #fffde7; /* Very light yellow */
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #222;
-      margin: 40px;
-      line-height: 1.6;
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/fredsongyu/fredsongyu.github.io/main/assets/images/icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            wyobrown: '#512D00',
+            wyogold: '#FFD700'
+          }
+        }
+      }
     }
-    img {
-      float: right;
-      margin-left: 20px;
-      border-radius: 8px;
-    }
-    h1 {
-      margin-top: 0;
-    }
-    a {
-      color: #1a0dab;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      border: none;
-      height: 1px;
-      background-color: #ccc;
-      margin: 20px 0;
-    }
-  </style>
+  </script>
 </head>
-<body>
-  <img src="https://raw.githubusercontent.com/fredsongyu/fredsongyu.github.io/main/assets/images/fredsongportrait.jpeg" width="200" height="200" alt="Fred Song portrait">
-  <h1>Fred Song</h1>
-  <p>Assistant Professor @ University of Wyoming</p>
-  <p><a href="https://www.uwyo.edu/civil/faculty_staff/faculty/fred-song/index.html">UW profile page</a></p>
-  <hr/>
-  <p>My research interests are traffic operations and safety, driver behavior, intelligent transportation systems, and vehicle automation.</p>
-  <p>Before joining UW, I was a researcher with Connecticut Transportation Institute at UConn.</p>
-  <p>Please check out my <a href="https://scholar.google.com/citations?user=k0RS7LgAAAAJ&hl=en">Google Scholar page</a> if you are interested in knowing more about my work.</p>
-  <hr/>
-  <p><strong>Team</strong></p>
-  <ul>
-    <li>Ramesh Dhimal, PhD Student</li>
-    <li>Raul Freyre, MS Student</li>
-    <li>Kiran Neupane, MS Student</li>
-    <li>Zaw Soe, MS Student</li>
-  </ul>
+<body class="bg-wyogold/10 font-sans text-gray-800 p-6 md:p-12">
+
+  <div class="max-w-4xl mx-auto bg-white shadow-md p-6 md:p-10 space-y-6 border border-wyobrown/30">
+
+    <!-- Header Section -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <h1 class="text-4xl font-bold">Fred Song</h1>
+        <p class="text-lg mt-2">Assistant Professor @ University of Wyoming</p>
+        <p class="mt-2">
+          <a href="https://www.uwyo.edu/civil/faculty_staff/faculty/fred-song/index.html" target="_blank" class="text-wyobrown underline hover:text-yellow-700">
+            UW profile page
+          </a>
+        </p>
+      </div>
+      <img class="w-48 h-48 object-cover shadow-md" src="https://raw.githubusercontent.com/fredsongyu/fredsongyu.github.io/main/assets/images/fredsongportrait.jpeg" alt="Fred Song portrait">
+    </div>
+
+    <hr class="border-wyobrown/30" />
+
+    <!-- Research Description -->
+    <div class="space-y-3">
+      <p>My research interests are traffic operations and safety, driver behavior, intelligent transportation systems, and vehicle automation.</p>
+      <p>Before joining UW, I was a researcher with Connecticut Transportation Institute at UConn.</p>
+      <p>
+        Please check out my 
+        <a class="text-wyobrown underline hover:text-yellow-700" href="https://scholar.google.com/citations?user=k0RS7LgAAAAJ&hl=en" target="_blank">
+          Google Scholar page
+        </a> 
+        if you are interested in knowing more about my work.
+      </p>
+    </div>
+
+    <hr class="border-wyobrown/30" />
+
+    <!-- Team Section -->
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">Team</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Ramesh Dhimal, PhD Student</li>
+        <li>Raul Freyre, MS Student</li>
+        <li>Kiran Neupane, MS Student</li>
+        <li>Zaw Soe, MS Student</li>
+      </ul>
+    </div>
+
+  </div>
+
 </body>
 </html>
 
