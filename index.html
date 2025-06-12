@@ -17,29 +17,32 @@
       }
     }
   </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="bg-wyogold/10 font-sans text-gray-800 p-6 md:p-12">
+<body class="bg-wyogold/10 font-sans text-gray-800 p-4 sm:p-6 md:p-12">
 
-  <div class="max-w-4xl mx-auto bg-white shadow-md p-6 md:p-10 space-y-6 border border-wyobrown/30">
+  <div class="max-w-4xl mx-auto bg-white shadow-md p-4 sm:p-6 md:p-10 space-y-6 border border-wyobrown/30">
 
     <!-- Header Section -->
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6">
       <div>
-        <h1 class="text-4xl font-bold">Fred Song</h1>
-        <p class="text-lg mt-2">Assistant Professor @ University of Wyoming</p>
-        <p class="mt-2">
+        <h1 class="text-3xl sm:text-4xl font-bold">Fred Song</h1>
+        <p class="text-base sm:text-lg mt-1 sm:mt-2">Assistant Professor @ University of Wyoming</p>
+        <p class="mt-1 sm:mt-2">
           <a href="https://www.uwyo.edu/civil/faculty_staff/faculty/fred-song/index.html" target="_blank" class="text-wyobrown underline hover:text-yellow-700">
             UW profile page
           </a>
         </p>
       </div>
-      <img class="w-48 h-48 object-cover shadow-md" src="https://raw.githubusercontent.com/fredsongyu/fredsongyu.github.io/main/assets/images/fredsongportrait.jpeg" alt="Fred Song portrait">
+      <div class="flex justify-center">
+        <img class="w-32 h-32 sm:w-48 sm:h-48 object-cover shadow-md" src="https://raw.githubusercontent.com/fredsongyu/fredsongyu.github.io/main/assets/images/fredsongportrait.jpeg" alt="Fred Song portrait">
+      </div>
     </div>
 
     <hr class="border-wyobrown/30" />
 
     <!-- Research Description -->
-    <div class="space-y-3">
+    <div class="space-y-3 text-sm sm:text-base">
       <p>My research interests are traffic operations and safety, driver behavior, intelligent transportation systems, and vehicle automation.</p>
       <p>Before joining UW, I was a researcher with Connecticut Transportation Institute at UConn.</p>
       <p>
@@ -55,8 +58,8 @@
 
     <!-- Team Section -->
     <div>
-      <h2 class="text-2xl font-semibold mb-2">Team</h2>
-      <div class="space-y-1">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-2">Team</h2>
+      <div class="space-y-1 text-sm sm:text-base">
         <p>Ramesh Dhimal, PhD Student</p>
         <p>Raul Freyre, MS Student</p>
         <p>Kiran Neupane, MS Student</p>
@@ -68,5 +71,3 @@
 
 </body>
 </html>
-
-
